@@ -125,7 +125,7 @@ if __name__ == '__main__':
             ap_pred[cnt_vol] = jaccard_score(gt,pred)
             
             #centroid to centroid distance
-            ctoc_dist[cnt_vol] = np.abs(pred_mid-gt_mid) * 0.5 # 0.5 is MElizPhilipvoxel spacing
+            ctoc_dist[cnt_vol] = np.abs(pred_mid-gt_mid) * 0.5 # 0.5 is voxel spacing
             cnt_vol += 1
         print('AVERAGE Balanced Accuracy:',bal_Acc/len(test_dLoader))
         print('AVERAGE Precision:',avp/len(test_dLoader))
