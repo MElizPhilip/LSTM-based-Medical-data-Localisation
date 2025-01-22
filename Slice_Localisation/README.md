@@ -7,5 +7,10 @@
 
 ## RUN
 To train the model with the default setting use 
-```python v3dL_TRAIN.py <any name to distinguish the model>
-   python v3dL_TRAIN.py slice_LOC_v1```
+
+```python v3dL_TRAIN.py any_name_to_distinguish_the_model ```
+
+To change any default setting, say the batch size, use
+
+```python v3dL_TRAIN.py any_name_to_distinguish_the_model -b 5 ```
+
