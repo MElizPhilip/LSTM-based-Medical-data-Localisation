@@ -14,11 +14,10 @@ import numpy as np
 from timeit import default_timer as timer
 import pandas as pd
 from torch.optim import lr_scheduler
-from monai import transforms
 import warnings 
   
-from Loc3D_v3dL_data_generator import CustomImageDataset
-from Loc3D_v3dL_network import BraTS_3D_LOC
+from BraTS_v3dL_data_generator import CustomImageDataset
+from BraTS_v3dL_network import BraTS_3D_LOC
 
 def get_scheduler(optimizer, opt):
     if opt.lr_policy == 'step':
