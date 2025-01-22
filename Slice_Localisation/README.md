@@ -15,4 +15,7 @@ To change any default setting, say the batch size, use
 ```python v3dL_TRAIN.py any_name_to_distinguish_the_model -b 5 ```
 
 ## RESULTS
-See image below for the slice localisation results. ![Results](/main/assets/slice_loc_results.png)
+Image shows the slice localisation of four samples, shown on the sagittal slices.
+
+
+![](/../main/assets/slice_loc_results.png)
