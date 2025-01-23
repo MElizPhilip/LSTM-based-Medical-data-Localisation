@@ -7,4 +7,11 @@ Long-Short-term memory layers, are used to learn the distinct pattern in the org
 
 ## Slice Localisation Vs 3D Localisation
 
+Let _V_ be a 3D volume with _A_ coronal slices (c<sub>1</sub>, c<sub>2</sub>, ... , c<sub>A</sub>), _B_ sagittal slices (s<sub>1</sub>, s<sub>2</sub>, ... , s<sub>B</sub>) and _C_ axial slices (a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>C</sub>). The network is learning to regress the six bounding box extremities (c<sub>st</sub>, c<sub>end</sub>, s<sub>st</sub>, s<sub>end</sub>, a<sub>st</sub>, a<sub>end</sub>) for 3D localisation and one of (c<sub>st</sub>, c<sub>end</sub>) / (s<sub>st</sub>, s<sub>end</sub>) / (a<sub>st</sub>, a<sub>end</sub>) for slice localisation. See image below for a pictorial representation of the difference.
 
+![](/../main/assets/LOC_main.png)
+
+## Network Architecture
+In the image below, (a) Architecture; Slice localisation network highlighted in yellow. (b) Prediction branch structure.
+
+![](/../main/assets/flow.png)
